@@ -9,12 +9,7 @@ sudo apt update -y && sudo apt install -y mise podman neovim gh && sudo apt upgr
 echo 'eval "$(mise activate bash)"' >> ~/.bashrc # bash_profile is better
 source ~/.bashrc
 mise doctor
-
-cd
-mise install node@latest
-mise use node@latest
-mise install go@latest
-mise use go@latest
+mise use -g node@24
 
 npm install -g npm@latest
 npm install -g @google/gemini-cli
